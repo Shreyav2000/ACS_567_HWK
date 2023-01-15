@@ -1,0 +1,25 @@
+[7.C.1] Scrum is a project management and completion framework. Although it can be utilized on any project, it is frequently employed in software development. Among the advantages of implementing Scrum are: 
+
+(1) Flexibility: Scrum is an adjustable framework, making it simple to modify to the particular requirements of a project. This enables teams to react swiftly to alterations in requirements or unforeseen challenges. 
+
+(2) Productivity gains: Scrum promotes regular inspection and adaption, which improves resource utilization and cuts down on time wasted on unproductive pursuits. 
+
+(3) Better communication among team members and stakeholders is made possible by the regular meetings that Scrum mandates, such as daily stand-ups, sprint planning, and retrospectives.
+
+(4) Better cooperation: Scrum places a strong emphasis on cross-functional teams, which encourages team members to work together. 
+
+(5) Higher quality: Scrum's emphasis on delivering functional software at the conclusion of each sprint helps guarantee that the finished result is of a high caliber and satisfies client requirements.
+
+[7.C.2] The Cynefin framework classifies problems into one of five problem domains: simple, complicated, complex, chaotic, or disorder. This classification aids in determining the best strategy for solving a problem. 
+
+(1) Simple: The issue is well-understood, and a fix is already available. Best practices and established procedures can be used to resolve these issues. 
+
+(2) Complicated: The issue is recognized, but there are several potential fixes. Experts are needed to assess the situation and choose the best line of action for these issues. 
+
+(3) Complex: The issue is poorly understood, and it is unclear how cause and effect are related. In order to comprehend the system and discover a solution for these issues, experimentation and learning are necessary.
+
+(4) Chaotic: The environment is unstable and changing quickly. To stabilize the situation, these issues call for swift response. 
+
+(5) Disorder: It is unclear what the problem is, and it is also unknown to which group it belongs. 
+
+Scrum is especially effective for complex problem domains. Scrum offers a framework for trying, learning from mistakes, and adjusting in order to comprehend the issue and identify a solution. Scrum's emphasis on producing usable software at the conclusion of each sprint enables teams to test their presumptions, gather user input, and make improvements as necessary.
