@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{AC688422-E886-487A-81FF-2B5DC8793517}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HWK1B PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HWK1B/Program.cs">
+    <Files>
+      <File FileName="HWK1B/Program.cs" Line="152" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HWK1B" expanded="True">
+            <Node name="HWK1B" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>newCalorie</Value>
+          <Value>calories</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/Program.cs" relfile="HWK1B/Program.cs" line="156" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
