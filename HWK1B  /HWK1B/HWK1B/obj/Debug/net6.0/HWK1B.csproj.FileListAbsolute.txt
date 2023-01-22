@@ -1,0 +1,15 @@
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/bin/Debug/net6.0/HWK1B
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/bin/Debug/net6.0/HWK1B.deps.json
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/bin/Debug/net6.0/HWK1B.runtimeconfig.json
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/bin/Debug/net6.0/HWK1B.dll
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/bin/Debug/net6.0/HWK1B.pdb
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.csproj.AssemblyReference.cache
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.AssemblyInfoInputs.cache
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.AssemblyInfo.cs
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.csproj.CoreCompileInputs.cache
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.dll
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/refint/HWK1B.dll
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.pdb
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/HWK1B.genruntimeconfig.cache
+/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK1B  /HWK1B/HWK1B/obj/Debug/net6.0/ref/HWK1B.dll
