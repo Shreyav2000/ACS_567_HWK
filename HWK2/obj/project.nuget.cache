@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vbwZLuxDqD5jK8J2EfcFLTk1sIpmlLxmuPf5ANk0xmApmqM+uSGN6vDEOxm0o0Kygp1msol1wajmY045ZKq6wQ==",
+  "success": true,
+  "projectFilePath": "/Users/shreyavithala/Desktop/Spring/ACS567_HWK/HWK2/HWK2.csproj",
+  "expectedPackageFiles": [
+    "/Users/shreyavithala/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/shreyavithala/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/shreyavithala/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/shreyavithala/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/shreyavithala/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/shreyavithala/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
