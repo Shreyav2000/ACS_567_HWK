@@ -2,6 +2,7 @@
 
 namespace CalorieRestAPI
 {
+    // Class that holds the total, average, min, and max calories
     public class CalorieAnalysis
     {
         public double totalCalories { get; set; }
@@ -9,6 +10,7 @@ namespace CalorieRestAPI
         public double minCalories { get; set; }
         public double maxCalories { get; set; }
 
+        // Constructor for CalorieAnalysis class
         public CalorieAnalysis(double totalCalories, double averageCalories, double minCalories, double maxCalories)
         {
             this.totalCalories = totalCalories;
@@ -17,11 +19,14 @@ namespace CalorieRestAPI
             this.maxCalories = maxCalories;
         }
     }
+    // Repository class for managing Calorie objects
     public class CalorieRepository
     {
+        // Singleton instance of the CalorieRepository class
         private static CalorieRepository instance;
         private List<Calorie> calories;
 
+        // Private constructor for CalorieRepository class
         private CalorieRepository()
         {
             calories = new List<Calorie>();
@@ -48,6 +53,7 @@ namespace CalorieRestAPI
             }
         }
 
+        // Method to return the singleton instance of the CalorieRepository class
         public static CalorieRepository getInstance()
         {
             if (instance == null)
@@ -58,15 +64,19 @@ namespace CalorieRestAPI
             return instance;
         }
 
+        // Method to return all Calorie objects in the repository
         public List<Calorie> getCalories()
         {
             return calories;
         }
 
+        // Method to return a specific Calorie object based on its ID
         public Calorie GetCalorie(int id)
         {
             Calorie calorie = null;
 
+
+            // Iterate through the list of Calorie objects and find the one with a matching ID
             foreach (Calorie c in calories)
             {
                 if (id == c.Id)
@@ -79,6 +89,7 @@ namespace CalorieRestAPI
             return calorie;
         }
 
+        // Method to add a new Calorie object to the repository
         public bool addCalorie(Calorie calorie)
         {
             bool isAdded = true;
@@ -101,13 +112,14 @@ namespace CalorieRestAPI
             return isAdded;
         }
 
-
+        // This method updates a Calorie object in the calories list by its id
         public bool editCalorie(int id, Calorie updated)
         {
             bool isEdited = false;
 
             foreach (Calorie c in calories)
             {
+                // Check if the id of the current Calorie object matches the id passed to the method
                 if (c.Id == id)
                 {
                     c.Name = updated.Name;
@@ -122,6 +134,7 @@ namespace CalorieRestAPI
             return isEdited;
         }
 
+        // This method deletes a Calorie object from the calories list by its id
         public bool deleteCalorie(int id)
         {
             Calorie delete = null;
@@ -146,7 +159,7 @@ namespace CalorieRestAPI
 
 
 
-
+        // This method calculates the total value of all the calories in the list
         public double calculateTotalCalories()
         {
             double total = 0;
@@ -157,6 +170,7 @@ namespace CalorieRestAPI
             return total;
         }
 
+        // This method calculates and returns an analysis of the calories data
         public CalorieAnalysis AnalyzeData()
         {
             double total = calculateTotalCalories();
