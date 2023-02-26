@@ -1,0 +1,38 @@
+﻿@page
+@model CalorieWebApp.Pages.Calories.IndexModel
+@{
+}
+
+<h2>List of Calorie Data</h2>
+
+<a class="btn btn-primary btm-sm" href="/Calorie/Create">New Calorie</a>
+@*<a class="btn btn-primary btm-sm" href="/Items/Analysis">Analysis</a>*@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th>Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var calorie in Model.Calories)
+        {
+            <tr>
+                <td>@calorie.Id</td>
+                <td>@calorie.Name</td>
+                <td>@calorie.Quantity</td>
+                <td>@calorie.Unit</td>
+                <td>@calorie.Calories</td>
+
+                <td>
+                    <a class="btn btn-primary btm-sm" href="/Calorie/Edit?id=@calorie.Id">Edit</a>
+                    <a class="btn btn-danger btm-sm" href="/Calorie/Delete?id=@calorie.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
