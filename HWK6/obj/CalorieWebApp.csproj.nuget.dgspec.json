@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shreyavithala/Downloads/ACS567_HWK/HWK6/CalorieWebApp.csproj": {}
+    "/Users/shreyavithala/Desktop/ACS567_HWK/HWK6/CalorieWebApp.csproj": {}
   },
   "projects": {
-    "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/HWK4.csproj": {
+    "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/HWK4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/HWK4.csproj",
+        "projectUniqueName": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/HWK4.csproj",
         "projectName": "HWK4",
-        "projectPath": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/HWK4.csproj",
+        "projectPath": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/HWK4.csproj",
         "packagesPath": "/Users/shreyavithala/.nuget/packages/",
-        "outputPath": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/obj/",
+        "outputPath": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shreyavithala/.nuget/NuGet/NuGet.Config"
@@ -98,14 +98,14 @@
         }
       }
     },
-    "/Users/shreyavithala/Downloads/ACS567_HWK/HWK6/CalorieWebApp.csproj": {
+    "/Users/shreyavithala/Desktop/ACS567_HWK/HWK6/CalorieWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK6/CalorieWebApp.csproj",
+        "projectUniqueName": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK6/CalorieWebApp.csproj",
         "projectName": "CalorieWebApp",
-        "projectPath": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK6/CalorieWebApp.csproj",
+        "projectPath": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK6/CalorieWebApp.csproj",
         "packagesPath": "/Users/shreyavithala/.nuget/packages/",
-        "outputPath": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK6/obj/",
+        "outputPath": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shreyavithala/.nuget/NuGet/NuGet.Config"
@@ -120,8 +120,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/HWK4.csproj": {
-                "projectPath": "/Users/shreyavithala/Downloads/ACS567_HWK/HWK4/HWK4.csproj"
+              "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/HWK4.csproj": {
+                "projectPath": "/Users/shreyavithala/Desktop/ACS567_HWK/HWK4/HWK4.csproj"
               }
             }
           }

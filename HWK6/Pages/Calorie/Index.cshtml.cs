@@ -16,7 +16,16 @@ namespace CalorieWebApp.Pages.Calories
 {
     public class IndexModel : PageModel
     {
+        /// <summary>
+        /// List of all the calories retrieved from the RESTful API.
+        /// </summary>
+
         public List<CalorieClass> Calories = new();
+
+        /// <summary>
+        /// Retrieves the list of all calories from the RESTful API.
+        /// </summary>
+
 
         public async Task OnGetAsync()
         {

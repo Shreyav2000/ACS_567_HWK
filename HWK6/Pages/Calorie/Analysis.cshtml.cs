@@ -15,7 +15,7 @@ namespace CalorieWebApp.Pages.Calories;
 using HWK4.Models;
 
 /// <summary>
-/// Class to provide analysis to the Analysis Page
+/// Represents a Razor Page for displaying calorie analysis.
 /// </summary>
 public class AnalysisModel : PageModel
 {
@@ -29,7 +29,7 @@ public class AnalysisModel : PageModel
         {
             client.BaseAddress = new Uri("https://localhost:7248");
             //HTTP GET
-            var responseTask = client.GetAsync("CalorieClass/GetAnalysis");
+            var responseTask = client.GetAsync("Calorie/analysis");
             responseTask.Wait();
 
             var result = responseTask.Result;

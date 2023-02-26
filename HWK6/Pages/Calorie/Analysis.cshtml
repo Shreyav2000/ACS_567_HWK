@@ -1,1 +1,42 @@
-﻿
+﻿@*Razor Page to display the analysis*@
+
+
+@page
+@model CalorieWebApp.Pages.Calories.AnalysisModel
+@{
+}
+
+<!-- This Razor Page displays the analysis of calorie data, including total calories, average calories,
+    minimum calories, and maximum calories. It uses the AnalysisModel as its model and accesses the analysis
+    data through the AnalysisData dictionary property of the DataAnalysis object. -->
+<br>
+<h2>Calorie Analysis</h2>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Analysis</th>
+            <th>Value</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Total Calories</td>
+            <td>@Model.DataAnalysis.AnalysisData["Total calories"]</td>
+        </tr>
+        <tr>
+            <td>Average Calories</td>
+            <td>@Model.DataAnalysis.AnalysisData["Average calories"]</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>@Model.DataAnalysis.AnalysisData["Min calories"]</td>
+        </tr>
+        <tr>
+            <td>Maximum</td>
+            <td>@Model.DataAnalysis.AnalysisData["Max calories"]</td>
+        </tr>
+    </tbody>
+</table>

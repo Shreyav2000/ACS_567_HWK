@@ -15,15 +15,24 @@ using CalorieRestAPI;
 
 namespace CalorieWebApp.Pages.Calories
 {
+    /// <summary>
+    /// Page model class for the Delete page
+    /// </summary>
     public class DeleteModel : PageModel
     {
-        public CalorieClass Calorie { get; private set; }
+        public CalorieClass Calorie  = new();
 
-        public string ErrorMessage { get; private set; }
+        public string ErrorMessage  = "";
 
-        public string SuccessMessage { get; private set; }
+        public string SuccessMessage  = "";
 
-        public async void OnGet(int id)
+        /// <summary>
+        /// HTTP Get method to retrieve the calorie with the specified id
+        /// </summary>
+        /// <param name="id">The id of the calorie to delete</param>
+        /// <returns>A Task representing the asynchronous operation</returns>
+
+        public async Task OnGetAsync(int id)
         {
             using (var client = new HttpClient())
             {
@@ -42,7 +51,11 @@ namespace CalorieWebApp.Pages.Calories
             }
         }
 
-        public async void OnPost(int id)
+        /// <summary>
+        /// HTTP Post method to delete the calorie with the specified id
+        /// </summary>
+        /// <param name="id">The id of the calorie to delete</param>
+        public async void OnPostAsync(int id)
         {
             using (var client = new HttpClient())
             {

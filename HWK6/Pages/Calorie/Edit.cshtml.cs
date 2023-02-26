@@ -13,12 +13,14 @@ using CalorieRestAPI;
 
 namespace CalorieWebApp.Pages.Calories
 {
+    /// <summary>
+    /// Page model class for the Edit page
+    /// </summary>
     public class EditModel : PageModel
     {
         public CalorieClass Calorie = new();
         public string ErrorMessage = "";
         public string SuccessMessage = "";
-
         public async Task OnGetAsync(int id)
         {
             using (var client = new HttpClient())
@@ -33,10 +35,13 @@ namespace CalorieWebApp.Pages.Calories
                 }
             }
         }
-
+        /// <summary>
+        /// HTTP Post method to edit the calorie with the specified id
+        /// </summary>
+        /// <param name="id">The id of the calorie to edit</param>
         public async Task OnPostAsync()
         {
-            //Calorie.Id = int.Parse(Request.Form["Id"]);
+            Calorie.Id = int.Parse(Request.Form["Id"]);
             Calorie.Name = Request.Form["Name"];
             Calorie.Quantity = int.Parse(Request.Form["Quantity"]);
             Calorie.Unit = Request.Form["Unit"];
@@ -54,7 +59,7 @@ namespace CalorieWebApp.Pages.Calories
 
                     var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-                    var result = await client.PutAsync("Calorie", content);
+                    var result = await client.PutAsync("Calorie/"+ Calorie.Id, content);
                     string resultContent = await result.Content.ReadAsStringAsync();
 
                     if (!result.IsSuccessStatusCode)

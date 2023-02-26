@@ -15,7 +15,7 @@ using System.Text.Json;
 
 namespace CalorieWebApp.Pages.Calories;
 /// <summary>
-/// Class to provide create functionality to the Create Item Page
+/// Class to provide create functionality to the Create Item Page.
 /// </summary>
 public class CreateModel : PageModel
 {
@@ -23,7 +23,7 @@ public class CreateModel : PageModel
     public string errorMessage = "";
     public string successMessage = "";
     /// <summary>
-    /// Performs HTTP Post
+    /// Performs HTTP Post to create a new calorie item.
     /// </summary>
     public async void OnPost()
     {

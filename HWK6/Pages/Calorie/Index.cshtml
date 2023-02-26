@@ -1,38 +1,43 @@
-﻿@page
+﻿@*Razor Page to display a list of Calorie data from the database.*@
+
+@page
 @model CalorieWebApp.Pages.Calories.IndexModel
 @{
 }
 
-<h2>List of Calorie Data</h2>
+<--! This Razor Page displays a list of Calorie data from the database. It uses the IndexModel as its model and accesses the list of calories through the Calories property of the IndexModel object. It also provides links to create a new Calorie item and view the analysis of the calorie data. For each Calorie item in the list,
+     it displays the Id, Name, Quantity, Unit, and Calories of the item, along with links to edit or delete the item. -->
 
-<a class="btn btn-primary btm-sm" href="/Calorie/Create">New Calorie</a>
-@*<a class="btn btn-primary btm-sm" href="/Items/Analysis">Analysis</a>*@
+    <h2>List of Calorie Data</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Food</th>
-            <th>Quantity</th>
-            <th>Unit</th>
-            <th>Calories</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var calorie in Model.Calories)
-        {
+    <a class="btn btn-primary btm-sm" href="/Calorie/Create">New Calorie</a>
+    <a class="btn btn-primary btm-sm" href="/Calorie/Analysis">Analysis</a>
+
+    <table class="table">
+        <thead>
             <tr>
-                <td>@calorie.Id</td>
-                <td>@calorie.Name</td>
-                <td>@calorie.Quantity</td>
-                <td>@calorie.Unit</td>
-                <td>@calorie.Calories</td>
-
-                <td>
-                    <a class="btn btn-primary btm-sm" href="/Calorie/Edit?id=@calorie.Id">Edit</a>
-                    <a class="btn btn-danger btm-sm" href="/Calorie/Delete?id=@calorie.Id">Delete</a>
-                </td>
+                <th>Id</th>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Unit</th>
+                <th>Calories</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var calorie in Model.Calories)
+            {
+                <tr>
+                    <td>@calorie.Id</td>
+                    <td>@calorie.Name</td>
+                    <td>@calorie.Quantity</td>
+                    <td>@calorie.Unit</td>
+                    <td>@calorie.Calories</td>
+
+                    <td>
+                        <a class="btn btn-primary btm-sm" href="/Calorie/Edit?id=@calorie.Id">Edit</a>
+                        <a class="btn btn-danger btm-sm" href="/Calorie/Delete?id=@calorie.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

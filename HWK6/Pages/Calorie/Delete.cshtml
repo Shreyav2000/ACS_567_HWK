@@ -1,12 +1,17 @@
 ﻿@*@Razor Page to delete an item from the DB@*@
 
+
 @page
 @model CalorieWebApp.Pages.Calories.DeleteModel
 @{
 }
 
+<!-- This Razor Page is used to delete an item from the database. It displays the details of the item to be deleted and provides a form with a "Save" button to confirm the deletion.
+    If there is an error during the deletion process, an error message is displayed. -->
+
+
 <br>
-<h2>Edit Calories</h2>
+<h2>Delete Calories</h2>
 @if (@Model.ErrorMessage.Length > 0)
 {
     <div>@Model.ErrorMessage</div>
@@ -33,6 +38,9 @@
         </tr>
     </table>
     <p></p>
-   
+    @if (Model.SuccessMessage.Length > 0)
+    {
+        <div>@Model.SuccessMessage</div>
+    }
     <input type="submit" value="Save" class="btn btn-primary" />
 </form>
