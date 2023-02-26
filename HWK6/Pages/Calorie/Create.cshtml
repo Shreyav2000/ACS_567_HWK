@@ -1,0 +1,45 @@
+﻿@*Razor Page to create/ add a new item to the DB*@
+
+
+
+@page
+@model CalorieWebApp.Pages.Calories.CreateModel
+@{
+}
+
+<br>
+<h2>Create Calorie Item</h2>
+
+@if (@Model.errorMessage.Length > 0)
+{
+    <div>Model.errorMessage</div>
+
+}
+<form method="POST">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value="@Model.Calorie.Name"></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type="text" name="quantity" value="@Model.Calorie.Quantity"></td>
+        </tr>
+        <tr>
+            <td>Unit</td>
+            <td><input type="text" name="unit" value="@Model.Calorie.Unit"></td>
+        </tr>
+        <tr>
+            <td>Calories</td>
+            <td><input type="text" name="calories" value="@Model.Calorie.Calories"></td>
+        </tr>
+    </table>
+    <p></p>
+
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div>Model.successMessage</div>
+    }
+    <input type="submit" value="Add" class="btn btn-primary" />
+</form>

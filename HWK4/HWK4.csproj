@@ -1,0 +1,147 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="AutoMapper" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Repositories\" />
+    <None Remove="Data\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="CalorieWebApp\.DS_Store" />
+    <None Remove="CalorieWebApp\obj\CalorieWebApp.csproj.nuget.g.props" />
+    <None Remove="CalorieWebApp\obj\CalorieWebApp.csproj.nuget.g.targets" />
+    <None Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.assets.cache" />
+    <None Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.AssemblyInfoInputs.cache" />
+    <None Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.csproj.AssemblyReference.cache" />
+    <None Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.RazorAssemblyInfo.cache" />
+    <None Remove="CalorieWebApp\obj\project.nuget.cache" />
+    <None Remove="CalorieWebApp\wwwroot\favicon.ico" />
+    <None Remove="CalorieWebApp\wwwroot\css\site.css" />
+    <None Remove="CalorieWebApp\wwwroot\js\site.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\LICENSE" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery\LICENSE.txt" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery\dist\jquery.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Remove="CalorieWebApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="CalorieWebApp\Pages\Shared\_Layout.cshtml.css" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Swashbuckle.AspNetCore.Swagger" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="CalorieWebApp\Pages\Calorie\Index.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Calorie\Create.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Calorie\Analysis.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Calorie\Delete.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Calorie\Edit.cshtml" />
+    <Content Remove="CalorieWebApp\appsettings.json" />
+    <Content Remove="CalorieWebApp\appsettings.Development.json" />
+    <Content Remove="CalorieWebApp\obj\CalorieWebApp.csproj.nuget.dgspec.json" />
+    <Content Remove="CalorieWebApp\obj\project.assets.json" />
+    <Content Remove="CalorieWebApp\Properties\launchSettings.json" />
+    <Content Remove="CalorieWebApp\Pages\Privacy.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\_ViewImports.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Error.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Index.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\_ViewStart.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Shared\_Layout.cshtml" />
+    <Content Remove="CalorieWebApp\Pages\Shared\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CalorieWebApp\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.RazorAssemblyInfo.cs" />
+    <Compile Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.AssemblyInfo.cs" />
+    <Compile Remove="CalorieWebApp\obj\Debug\net7.0\CalorieWebApp.GlobalUsings.g.cs" />
+    <Compile Remove="CalorieWebApp\Program.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Privacy.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Error.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Index.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Calorie\Index.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Calorie\Create.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Calorie\Analysis.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Calorie\Delete.cshtml.cs" />
+    <Compile Remove="CalorieWebApp\Pages\Calorie\Edit.cshtml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+</Project>
